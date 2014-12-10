@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <Languages xmlns="">
+    <Language code="es" />
+    <Language code="it" />
+    <Language code="pt" />
+    <Language code="fa" />
+    <Language code="ru" />
+    <Language code="ar" />
+    <Language code="fr" />
+    <Language code="ja" />
+    <Language code="vi" />
+    <Language code="pl" />
+  </Languages>
+  <App xmlns="" ProductID="{0cb48a28-7def-4ac9-9bf1-25299aaf93b4}" Title="Metronome" RuntimeType="Silverlight" Version="1.8.0.0" Genre="apps.normal" Author="Arash Motamedi" Description="Play an instrument? Keep the rhythm with Metronome!" Publisher="Arash Motamedi" PublisherID="{316e3ee8-5350-4239-aa3f-1d014c5f7168}">
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <Capabilities></Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MetronomePage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="MetronomeToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\SmallTile.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\MediumTile.png</BackgroundImageURI>
+          <Title></Title>
+          <BackContent></BackContent>
+          <BackBackgroundImageURI IsRelative="true" IsResource="false"></BackBackgroundImageURI>
+          <BackTitle></BackTitle>
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+          <HasLarge>false</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
